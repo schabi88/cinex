@@ -132,9 +132,9 @@
                     <version>1.7.2</version>
                     <configuration>
                         <debug>${debug.enable}</debug>
-                        <debugPort>8000</debugPort>
+                        <debugPort>8003</debugPort>
                         <config>${basedir}/conf</config>
-                        <tomeeHttpPort>8009</tomeeHttpPort>
+                        <tomeeHttpPort>8083</tomeeHttpPort>
                         <tomeeClassifier>plus</tomeeClassifier>
                         <libs>
                             <lib>com.h2database:h2:${h2version}</lib>

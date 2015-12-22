@@ -68,15 +68,15 @@
          Java HTTP Connector: /docs/config/http.html (blocking & non-blocking)
          Java AJP  Connector: /docs/config/ajp.html
          APR (HTTP/AJP) Connector: /docs/apr.html
-         Define a non-SSL HTTP/1.1 Connector on port 8009
+         Define a non-SSL HTTP/1.1 Connector on port 8083
     -->
-    <Connector port="8009" protocol="HTTP/1.1"
+    <Connector port="8083" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" xpoweredBy="false" server="Apache TomEE" />
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
-               port="8009" protocol="HTTP/1.1"
+               port="8083" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" />
     -->

@@ -2,7 +2,7 @@
 <tomee>
     <Resource id="cinexDB" type="DataSource">
         JdbcDriver org.h2.Driver
-        JdbcUrl jdbc:h2:file:~/cinexDB;DB_CLOSE_DELAY=-1
+        JdbcUrl jdbc:h2:file:~/cinexdb;DB_CLOSE_DELAY=-1
         UserName sa
         Password
         JtaManaged true
