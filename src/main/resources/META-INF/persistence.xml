@@ -1,0 +1,29 @@
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="1.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+       http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+
+    <persistence-unit name="CinexDB" transaction-type="JTA">
+        <jta-data-source>java:jboss/datasources/cinexdb</jta-data-source>
+
+        <!--
+
+        my classes needs to be added later
+
+        <class>de.dhbw.meetme.domain.User</class>
+        <class>de.dhbw.meetme.domain.UuidId</class>
+        <class>de.dhbw.meetme.domain.PersistentObject</class>
+        <class>de.dhbw.meetme.domain.GeoData</class>
+        <class>de.dhbw.meetme.domain.ScoreBoard</class>
+        <class>de.dhbw.meetme.domain.Friends</class>
+
+        -->
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
