@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tomee>
+    <Resource id="cinexDB" type="DataSource">
+        JdbcDriver org.h2.Driver
+        JdbcUrl jdbc:h2:file:~/cinexDB;DB_CLOSE_DELAY=-1
+        UserName sa
+        Password
+        JtaManaged true
+    </Resource>
+</tomee>
