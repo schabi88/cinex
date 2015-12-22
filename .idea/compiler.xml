@@ -19,7 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Cinex" target="1.5" />
+      <module name="cinex" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
