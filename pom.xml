@@ -13,7 +13,7 @@
 
 
     <properties>
-        <debug.enable>true</debug.enable>
+        <debug.enable>false</debug.enable>
         <hibernate-version>4.3.11.Final</hibernate-version>
         <h2version>1.4.188</h2version>
     </properties>
@@ -132,9 +132,9 @@
                     <version>1.7.2</version>
                     <configuration>
                         <debug>${debug.enable}</debug>
-                        <debugPort>8003</debugPort>
+                        <debugPort>8002</debugPort>
                         <config>${basedir}/conf</config>
-                        <tomeeHttpPort>8083</tomeeHttpPort>
+                        <tomeeHttpPort>8088</tomeeHttpPort>
                         <tomeeClassifier>plus</tomeeClassifier>
                         <libs>
                             <lib>com.h2database:h2:${h2version}</lib>
