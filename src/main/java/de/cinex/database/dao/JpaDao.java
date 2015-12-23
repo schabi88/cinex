@@ -1,9 +1,7 @@
 package de.cinex.database.dao;
 
-
 import de.cinex.domain.PersistentObject;
 import de.cinex.domain.UuId;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;

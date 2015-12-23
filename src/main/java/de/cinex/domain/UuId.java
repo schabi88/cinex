@@ -11,16 +11,16 @@ public class UuId implements Serializable {
 
     private UuId(String id) {
         this.id = id;
-    } //First contructor with parameterized String "id"
+    }
 
     public UuId() {
         id = UUID.randomUUID().toString();
-    } //Second constructor with no paramter -> generates UUID and converts into string
+    }
 
-    //Method does not make any sense to me, fromString is pre defined by class UUID, why is this (Override??!!) necessary?
+
     @SuppressWarnings("ResultOfMethodCallIgnored")
     public static UuId fromString(String id) {
-        UUID.fromString(id); // validate
+        UUID.fromString(id);
         return new UuId(id);
     }
 
@@ -30,7 +30,7 @@ public class UuId implements Serializable {
 
     public void setId(String id) {
         this.id = UUID.fromString(id).toString();
-    } //Sets ID by taking ID as paramter and generates new UUID and comnverts it into string
+    }
 
     @Override
     public boolean equals(Object o) {

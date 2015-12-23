@@ -5,6 +5,7 @@ import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 abstract public class PersistentObject {
+
     @EmbeddedId
     protected UuId id;
 
@@ -28,7 +29,6 @@ abstract public class PersistentObject {
         PersistentObject that = (PersistentObject) o;
 
         return id.equals(that.id);
-
     }
 
     @Override
